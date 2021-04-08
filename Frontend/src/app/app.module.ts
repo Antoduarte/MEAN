@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,7 +13,14 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule}  from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
-import { FiltroPipe } from './pipes/filtro.pipe'
+import { FiltroPipe } from './pipes/filtro.pipe';
+//collapse
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+//datepiker
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import localEs from '@angular/common/locales/es';
+import {registerLocaleData} from '@angular/common';
+registerLocaleData(localEs, 'es');
 
 @NgModule({
   declarations: [
@@ -33,9 +40,11 @@ import { FiltroPipe } from './pipes/filtro.pipe'
     BrowserAnimationsModule, 
     ToastrModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CollapseModule.forRoot(),
+    BsDatepickerModule.forRoot(),
   ],
-  providers: [],
+  providers: [{provide:LOCALE_ID, useValue:'es'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

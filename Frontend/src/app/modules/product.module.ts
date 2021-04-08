@@ -4,4 +4,5 @@ export class Product {
     categoria:string;
     descripcion:string;
     precio:number;
+    fechaCreacion?:string;
 }

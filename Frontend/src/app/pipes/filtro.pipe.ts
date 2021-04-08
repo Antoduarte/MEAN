@@ -8,7 +8,7 @@ export class FiltroPipe implements PipeTransform {
   transform(value: any, args: any):any {
     const results = [];
     for(const result of value ){
-if (result.nombre.toLowerCase().indexOf(args.toLowerCase()) > -1) {
+if (result.fechaCreacion.indexOf(args()) > -1) {
         results.push(result);
       }
     }

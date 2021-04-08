@@ -2,7 +2,7 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.btn {
+.bt {
     width: 65px;
     height: 65px;
   bottom: 40px;
@@ -10,20 +10,20 @@
   position: fixed;
 }
 
-.btn,
-.btn2 {
+.bt,
+.bt2 {
 
   border-radius: 50%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background: rgb(64, 202, 124);
-  padding-bottom: 14px;
+  padding-bottom: 5px;
   color: white;
   font-size: 2rem;
   border: none;
   transition: 0.7s ease;
 }
 
-.btn:hover {
+.bt:hover {
   transform: translateY(-7px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: white;
@@ -37,7 +37,7 @@
   box-shadow: rgba(149, 157, 165, 0.11) 0px 4px 4px;
 }
 
-.btn2 {
+.bt2 {
   position: fixed;
   top: 70px;
   right: 20px;
@@ -73,8 +73,6 @@
   width: 48%;
   padding: 1rem;
 }
-
-
 
 .banner .imgBox {
   width: 48%;
